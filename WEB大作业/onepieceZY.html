@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>海贼王主页</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	*{
+		margin: 0px;
+	}
+	a{
+		text-decoration: none;
+		color: #4D3900;
+	}
+	#headback{
+		background: url(onepiece.jpg);
+		margin: 0px;
+		height: 455px;
+	}
+	#back{
+		height: 450px;
+		width: 736px;
+		margin-top:5px; 
+		margin-left: 400px;
+	}
+	#dhl{
+		background-color: #00ccff;
+		height: 41px;
+
+	}
+	.dhlul li{
+		list-style: none;
+		font-weight: bold;
+		text-decoration:none;
+		background-color: #666666;
+		float: left;
+		margin-left:68px; 
+	}
+	#dhlone{
+		margin-left:225px; 
+	}
+	#ssk{
+		height: 20px;
+	}
+	#ss{
+		height: 25px;
+		text-decoration:none;
+		margin-top: 7px;
+	}
+	#ssl{
+	 	background-color: #00ccff;
+	}
+	.dhlul a{
+		color:white;
+		font-weight: bold;
+		display: block;
+		padding:10px; 
+	}
+	.dhlul a:hover{
+		background-color: #cc9999;
+	}
+	#content{
+		height: 2075px;
+	}
+	.mp4{
+		height: 450px;
+		width: 768px;
+		margin-top: 20px;
+		margin-left: 0px; 
+	}
+	#mp4{
+		float: left;
+	}
+	#wz{
+    	float: left;
+    	height: 450px;
+    	margin-top: 20px;
+    }
+   	.LOGO{
+		height: 215px;
+		width: 400px;
+		margin-left:170px; 
+	}
+	.wzone{
+   		width: 350px;
+   		height: 235px;
+   		float: left; 
+   		margin-left:25px; 
+   		margin-top: 10px;
+   	}
+   	.wztwo{
+   		width: 350px;
+   		height: 235px;
+   		float: left;
+   		margin-top: 10px;a
+   	}
+	#wzone li{
+		text-decoration:none;
+		font-size: 20px;
+	}
+	#wzone a{
+		color: #000000;
+	}
+	#wztwo a{
+		color: #000000;
+	}
+	#wztwo li{
+		text-decoration:none;
+		font-size: 20px;
+	}
+	#rwjs{
+		float: left;
+		height: 1520px;
+		width: 1519px;
+		margin-top: 15px; 
+		background-image: url(bg.jpg);
+	}
+	#luffy{
+		height:525px;
+		width: 500px;
+		float: left;
+		border: 3px  solid #C0C0C0;
+		margin-right: 2px;
+		margin-bottom: 2px;
+	}
+	#luffy img{
+		margin-top: 20px;
+		margin-left:170px;
+	}
+	#luffy h1{
+		margin-left:215px;
+	}
+	#luffy h2{
+		margin-left:180px;
+	}
+	#luffy h4{
+		margin-left:190px;
+	}
+	#zoro{
+		height:525px;
+		width: 500px;
+		float: left;
+		border: 3px  solid #C0C0C0;
+		margin-right: 2px;
+		margin-bottom: 2px;
+	}
+	#zoro img{
+		margin-top: 20px;
+		margin-left:170px;
+	}
+	#zoro h1{
+		margin-left:190px;
+	}
+	#zoro h2{
+		margin-left:175px;
+	}
+	#zoro h4{
+		margin-left:172px;
+	}
+	#nami{
+		height:525px;
+		width: 500px;
+		float: left;
+		border: 3px  solid #C0C0C0;
+		margin-bottom: 2px;
+	}
+	#nami img{
+		margin-top: 20px;
+		margin-left:170px;
+	}
+	#nami h1{
+		margin-left:205px;
+	}
+	#nami h2{
+		margin-left:227px;
+	}
+	#nami h4{
+		margin-left:182px;
+	}
+	#usopp{
+		height:525px;
+		width: 500px;
+		float: left;
+		border: 3px  solid #C0C0C0;
+		margin-right: 2px;
+		margin-bottom: 2px;
+	}
+	#usopp img{
+		margin-top: 20px;
+		margin-left:170px;
+	}
+	#usopp h1{
+		margin-left:235px;
+	}
+	#usopp h2{
+		margin-left:215px;
+	}
+	#usopp h4{
+		margin-left:195px;
+	}
+	#sanji{
+		height:525px;
+		width: 500px;
+		float: left;
+		border: 3px  solid #C0C0C0;
+		margin-right: 2px;
+		margin-bottom: 2px;
+	}
+	#sanji img{
+		margin-top: 20px;
+		margin-left:170px;
+	}
+	#sanji h1{
+		margin-left:215px;
+	}
+	#sanji h2{
+		margin-left:175px;
+	}
+	#sanji h4{
+		margin-left:172px;
+	}
+	#chopper{
+		height:525px;
+		width: 500px;
+		float: left;
+		border: 3px  solid #C0C0C0;
+		margin-bottom: 2px;
+	}
+	#chopper img{
+		margin-top: 20px;
+		margin-left:170px;
+	}
+	#chopper h1{
+		margin-left:157px;
+	}
+	#chopper h2{
+		margin-left:175px;
+	}
+	#chopper h4{
+		margin-left:190px;
+	}
+	#robin{
+		height:525px;
+		width: 500px;
+		float: left;
+		border: 3px  solid #C0C0C0;
+		margin-right: 2px;
+	}
+	#robin img{
+		margin-top: 20px;
+		margin-left:170px;
+	}
+	#robin h1{
+		margin-left:190px;
+	}
+	#robin h2{
+		margin-left:195px;
+	}
+	#robin h4{
+		margin-left:172px;
+	}
+	#franky{
+		height:525px;
+		width: 500px;
+		float: left;
+		border: 3px  solid #C0C0C0;
+		margin-right: 2px;
+	}
+	#franky img{
+		margin-top: 20px;
+		margin-left:170px;
+	}
+	#franky h1{
+		margin-left:205px;
+	}
+	#franky h2{
+		margin-left:215px;
+	}
+	#franky h4{
+		margin-left:182px;
+	}
+	#brook{
+		height:525px;
+		width: 500px;
+		float: left;
+		border: 3px  solid #C0C0C0;
+	}
+	#brook img{
+		margin-top: 20px;
+		margin-left:170px;
+	}
+	#brook h1{
+		margin-left:190px;
+	}
+	#brook h2{
+		margin-left:215px;
+	}
+	#brook h4{
+		margin-left:182px;
+	}
+	#footer{
+		
+	}
+	.zp{
+		height: 200px;
+		margin-top: 15px;
+	}
+	.a img{
+		height: 175px;
+		width: 250px;
+		margin: 25px;
+		margin-bottom:0px; 
+		float: left;
+	}
+	.b img{
+		height: 175px;
+		width: 250px;
+		margin: 25px;
+		margin-bottom:0px; 
+		float: left;
+	}
+	.c img{
+		height: 175px;
+		width: 250px;
+		margin: 25px;
+		margin-bottom:0px; 
+		float: left;
+	}
+	.d img{
+		height: 175px;
+		width: 250px;
+		margin: 25px;
+		margin-bottom:0px; 
+		float: left;
+	}
+	.e img{
+		height: 175px;
+		width: 250px;
+		margin: 30px;
+		margin-bottom:0px; 
+		float: left;
+	}
+	#zpwz{
+		height: 32px;
+	}
+	#a{
+		margin-left:90px; 
+		float: left;
+	}
+	#b{
+		margin-left:190px; 
+		float: left;
+	}
+	#c{
+		margin-left:155px; 
+		float: left;
+	}
+	#d{
+		margin-left:180px; 
+		float: left;
+	}
+	#e{
+		margin-left:165px; 
+		float: left;
+	}
+	#foot{
+		margin-top: 30px;
+		height: 80px;
+		background-color: #c0c0c0;
+	}
+	.gs{
+		margin-left: 455px;
+		padding-top: 10px;
+	}
+	.zz{
+		margin-left: 710px;
+		width: 200px;
+		margin-top: 10px;
+	}
+	.mone{
+		float: left;
+		height: 80px;
+		width: 71px;
+		margin-left:150px; 
+	}
+	.mtwo{
+		float: right;
+		height: 80px;
+		width: 71px;
+		margin-right: 150px;
+	}
+	</style>
+</head>
+<body>
+<!页头部分>
+<div id="header">
+	<div id="headback">
+		<img src="toubu.jpg" id="back">
+	</div>
+	<div id="dhl">
+		<ul class ="dhlul">
+			<li id="dhlone"><a href="onepieceLBY.html">人物介绍</a></li>
+			<li><a href="onepieceLBY.html">人物经历</a></li>
+			<li><a href="onepieceLBY.html">势力分布</a></li>
+			<li><a href="onepieceLBY.html">历史正文</a></li>
+			<li><a href="onepieceLBY.html">古代兵器</a></li>
+			<li><a href="onepieceLBY.html">了解我们</a></li>
+			<li id="ssl">
+			<input type="text" name="搜索" placeholder="请输入" id="ssk">
+			<input type="submit" name="搜索" value="搜索" id="ss">
+			</li>
+		</ul>
+	</div>
+</div>
+<!页面内容>
+<div id="content">
+	<div id="mp4">
+		<video src="海贼王片头.mp4" controls="controls" class="mp4" autoplay="autoplay"></video> 
+	</div>
+	<div id="wz">
+		<img src="LOGO.jpg" class="LOGO"><br>
+		<div class="wzone">
+			<ul id="wzone">
+				<li><a href="onepieceLBY.html">黄金岛的冒険</a></li>
+				<li><a href="onepieceLBY.html">发条岛的冒険</a></li>
+				<li><a href="onepieceLBY.html">珍兽岛的乔巴王国</a></li>
+				<li><a href="onepieceLBY.html">死亡尽头的冒険</a></li>
+				<li><a href="onepieceLBY.html">被诅咒的圣剑 七星剑!</a></li>
+				<li><a href="onepieceLBY.html">狂欢男爵和神秘的岛</a></li>
+				<li><a href="onepieceLBY.html">机关城的机械巨兵</a></li>
+			</ul>
+		</div>	
+		<div class="wztwo">
+			<ul id="wztwo">	
+				<li><a href="onepieceLBY.html">砂漠的王女与海贼们</a></li>
+				<li><a href="onepieceLBY.html">绽放在寒冬的奇迹樱花!</a></li>
+				<li><a href="onepieceLBY.html">强者世界!</a></li>
+				<li><a href="onepieceLBY.html">追寻草帽</a></li>
+				<li><a href="onepieceLBY.html">最强之敌Z</a></li>
+				<li><a href="onepieceLBY.html">特别版3D2Y-跨越艾斯之死!</a></li>
+				<li><a href="onepieceLBY.html">Onepiece Film Gold</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="rwjs">
+		<div id="luffy">
+			<img src="001.gif">
+			<br>
+			<h1>草帽</h1>
+			<h2>蒙奇·D·路飞</h2>
+			<h4>悬赏金:5亿贝利</h4>
+			<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;草帽海贼团船长，超人系橡胶果实拥有者，可以免疫物理伤害和枪击。来自东海,出生在风车村,爷爷是海军英雄卡普,父亲是革命军首领龙,结拜大哥是白胡子海贼团二番队队长火拳艾斯(已故,顶上战争中战死),结拜二哥是革命军二把手总参谋长萨博。标志性特征是一顶草帽。
+			</p>
+			<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梦想是找到传说中的One Piece，成为海贼王。性格积极乐观，爱憎分明且十分重视伙伴，对任何危险的事物都超感兴趣。
+			</p>	
+		</div>
+		<div id="zoro">
+			<img src="002.gif">
+			<br>
+			<h1>海贼猎人</h1>
+			<h2>罗罗诺亚·索隆</h2>
+			<h4>悬赏金:3亿2000万贝利</h4>
+			<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;草帽海贼团副船长兼剑士，来自东海霜月村,在耕四郎所开的道场学习剑术。和耕四郎的女儿古伊娜从小青梅竹马,从小与古伊娜切磋剑术,后来古伊娜意外去世,于是索隆带着古伊娜的遗志得到了耕四郎镇馆之宝-和道一文字,从此走上三刀流的道路,曾当过海贼猎人，后成为路飞海贼团三大战力之一，目前佩刀和道一文字、黑刀秋水、三代鬼彻。
+			</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梦想是成为世界第一大剑豪。爱睡觉，超级路痴（跟在别人后面也能迷路	  ）、讲义气、较为热血、信任船长、愿为挚友而死。
+			</p>	
+		</div>
+		<div id="nami">
+			<img src="003.gif">
+			<br>
+			<h1>小偷猫</h1>
+			<h2>娜美</h2>
+			<h4>悬赏金:6600万贝利</h4>
+			<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;草帽海贼团航海士,来自东海可可西亚村。孩童时被海军贝尔梅尔收养，感情很深，抚养长大，后鱼人阿龙杀了她的养母，并逼迫她为自己书海图，娜美忍辱负重，同鱼人阿龙定下协约，用1亿贝利购买她的村子，但被其欺骗（勾结海军夺取赎金），绝望之时，求路飞帮忙，路飞毫不犹豫的答应了她，打倒了鱼人阿龙，高喊娜美是自己的伙伴，并邀请娜美加入海贼团。是草帽海贼团智商数一数二的人物，经常欺负路飞等人。武器是乌索普发明的天候棒。
+			</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梦想是画出全世界的属于自己的地图。能够依靠身体去感知周围环境的变化，不单单依靠罗盘和经验，是最出色的航海士，大胆、心细、善良，最大的爱好是钱，听到宝藏、看到钱眼睛就变成了钱的标志。
+			</p>	
+		</div>
+		<div id="usopp">
+			<img src="004.gif">
+			<br>
+			<h1>神</h1>
+			<h2>乌索普</h2>
+			<h4>悬赏金:2亿贝利</h4>
+			<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;草帽海贼团狙击手，来自东海西罗普村。人如其名，吹牛没谱。和村里的几个孩子组成“乌索普海贼团”，自称乌索普船长。年幼丧母，父亲是红发海贼团的一员，世界第一的狙击手耶稣布。每天都希望自己父亲的海贼船能到自己的村子，所以天天绕着村里喊“海贼来了！海贼来了！”。后来发现克洛船长的阴谋后，立志要保护村里的人，和路飞并肩作战。戴上“狙击王”面具，可以暂时改变自己胆小的性格，坚强起来。
+			</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梦想是要成为海上最勇敢的战士。有时消极有时自信过度，长鼻子，爱说大话，但是不易骗到别人，被骗的只有路飞（奇怪的是大话总是能兑现），两年后坚强了不少。
+			</p>	
+		</div>
+		<div id="sanji">
+			<img src="005.gif">
+			<br>
+			<h1>黑足</h1>
+			<h2>文斯莫克·山治</h2>
+			<h4>悬赏金:1亿7700万贝利</h4>
+			<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;草帽海贼团厨师，出生自北海,其实为北海王族"文斯莫克家族"的第三子,由于童年弱小,在"文斯莫克家族"中弱小的人不配有尊严受尽苦难,而逃离家族,逃到了东海，遇到了"独脚"哲夫,后来和哲夫一起开了东海海上餐厅"巴拉迪"并和哲夫学习厨艺。草帽海贼团三大战力之一,有着骑士精神，宁死也不攻击女人的信念。
+			</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梦想是找到传说之海-ALL BLUE。遇到事情能冷静的分析思考，并做出正确的判断（女性面前除外）,为伙伴解难，时常扮演奇兵的角色，让人出其不意。不管是生气还是平时的日常对话，嘴里都会冒出脏字，并喜欢用暴力解决问题（尤其是对路飞偷吃），但实际上却是个关心伙伴，体贴弱者，同情肚子饿的人的温柔男人。
+			</p>
+		</div>
+		<div id="chopper">
+			<img src="006.gif">
+			<br>
+			<h1>爱吃棉花糖的</h1>
+			<h2>托尼托尼·乔巴</h2>
+			<h4>悬赏金:100贝利</h4>
+			<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;草帽海贼团船医，来自伟大航路，磁鼓王国，动物系人人果实拥有者。过去是一只驯鹿，有着蓝色又灵敏的鼻子，因此被其他驯鹿排斥，后来意外之中吃了人人果实，后来变成了人们嘴中的雪怪，后来遇到恩师Dr.希鲁鲁克，曾在不知情的情况下为救恩师Dr.希鲁鲁克让他吃下剧毒蘑菇，知道真相后后悔莫及，立志要找到治疗任何病的万能药。害怕的时候会赶忙要躲起来，却把身子露在要藏起来的墙外头。吃了自己发明的蓝波球后会七段变身。
+			</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梦想是成为不管什么都能医治的医生。天真、可爱、容易受骗，受到夸赞时嘴里说不会高兴，可是做出来的动作很快乐的样子，不善隐藏自己的情绪。
+			</p>	
+		</div>
+		<div id="robin">
+			<img src="007.gif">
+			<br>
+			<h1>恶魔之子</h1>
+			<h2>妮可·罗宾</h2>
+			<h4>悬赏金:1亿3000万贝利</h4>
+			<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;草帽海贼团历史学家,超人系花花果实拥有者。来自西海考古学之岛奥哈拉。奥哈拉是一座充满历史学家的考古之岛，因为背着世界政府自行翻译历史正文，企图找到空白的100年的历史而被灭岛，而罗宾是唯一的幸存者，从小被政府通缉因为其有能够翻译历史正文的能力，一直生活在世界政府的追杀中，更被世人认为是恶魔的化身，孤苦伶仃的独自闯荡在充满黑暗的世界中，寻觅着真正的历史。一次又一次的探索，得到的只是古代兵器的信息，终于心灰意冷，想以死了却此生，后被路飞所救，加入草帽海贼团，成为路飞等人的同伴，一路冒险，渐渐的放开了封闭已久的心扉，将路飞等视为同伴。
+			</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梦想是找到真正的历史本文，解读空白的百年历史。性格内向，十分善良。
+			</p>	
+		</div>
+		<div id="franky">
+			<img src="008.gif">
+			<br>
+			<h1>人造人</h1>
+			<h2>弗兰奇</h2>
+			<h4>悬赏金:9400万贝利</h4>
+			<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;草帽海贼团船工，来自伟大航路，水之都。传奇造船师汤姆先生的两个徒弟之一。原名卡特·弗兰姆，由于小时候为救汤姆先生而拦截海列车被差点撞死，幸运遇到废弃船只，依靠自己天才的制造技术把自己改造成了全身钢铁的半机器人。起初是路飞他们的敌人后来一起经历了司法岛事件后觉得路飞他们特别和自己的性格，于是加入草帽海贼团。
+			</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梦想是想制造出梦想之船，但“万里阳光号”完成后，是想看到自己制造的船到达世界尽头。外表变态，内心重情重义，相当有男子汉气概，遇到感动的事情会痛哭流涕。
+			</p>	
+		</div>
+		<div id="brook">
+			<img src="009.gif">
+			<br>
+			<h1>灵魂之王</h1>
+			<h2>布鲁克</h2>
+			<h4>悬赏金:8300万贝利</h4>
+			<p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;草帽海贼团音乐家,来自西海，超人系黄泉果实拥有者。原本是某国护卫队团长，后加入伦巴海贼团剑士和音乐家，后因船长洋基染上瘟疫离开海贼团而成为代理船长，50年前跟鲸鱼拉布约定在“双子峡” 重逢。后来在魔幻三角地带遇到敌人并遭遇毒手，因黄泉果实的能力，灵魂走出黄泉并准备回身体时，在魔幻三角地带迷路一年，找到的身体已变成骷髅，但爆炸头仍然存在（他本人表示自己的发根很坚强，另外的一个很重要的原因是他已经变成了一具骷髅，为了能让拉布认出自己，就必须要保留这个非常有代表性的形体特征。自此他只能以骷髅状态生存。
+			</p>
+			<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;梦想是走到伟大航道的尽头，并环峣世界一周到“伟大航道 双子峡”跟岛屿鲸鱼 拉布重逢。
+			</p>	
+		</div>
+	</div>
+</div>
+<!页脚部分>
+<div id="footer"> 
+	<div class="zp">
+		<div class="a">
+			<img src="01.jpg">
+		</div>
+		<div class="b">
+			<img src="02.jpg">
+		</div>
+		<div class="c">
+			<img src="03.jpg">
+		</div>
+		<div class="d">
+			<img src="04.jpg">
+		</div>
+		<div class="e">
+			<img src="05.jpg">
+		</div>
+	</div>
+	<div id="zpwz">
+		<h2 id="a"><a href="onepieceLBY.html">强者世界</a></h2>
+		<h2 id="b"><a href="onepieceLBY.html">前往"新世界"</a></h2>
+		<h2 id="c"><a href="onepieceLBY.html">"2Y"后聚首</a></h2>
+		<h2 id="d"><a href="onepieceLBY.html">前往鱼人岛</a></h2>
+		<h2 id="e"><a href="onepieceLBY.html">复仇"草帽联盟"</a></h2>
+	</div>
+	<div id="foot">
+		<img src="ewm.png" class="mone">
+		<img src="ewm.png" class="mtwo">
+		<p class="gs">海贼王对于许多人可能只是一部动漫,但我知道,对海米而言是我们一起逝去过的青春!</p>
+		<p class="zz">[<a href="onepieceLBY.html">加入我们</a>]</p>
+	</div>
+</div>
+</body>
+</html>
