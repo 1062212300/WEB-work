@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		*{
+		margin: 0px;
+		padding: 0px;
+		}
+		#a{
+			height : 430px;
+			width : 345px;
+			margin-left: 550px;
+			margin-top: 50px;  
+		}
+		.jgk{
+			height: 85px;
+			width: 260px;
+			margin: 0px;
+			font-size:50px;
+			text-align: right; 
+		}
+		td{
+			height: 85px;
+			width: 85px;
+			font-size: 22px;
+			size: 65px;
+		}
+		input{
+			height: 55px;
+			width: 55px;
+			margin: 15px;
+		}
+		input:active{
+			border-color:blue; 
+			border: 1px;
+		}
+	</style>
+	<script type="text/javascript">
+		var str= 0;
+		function showData(str)
+		{
+			document.getElementById("result").value 
+			+= document.getElementById(str).value;
+		}
+		function calculate() 
+		{
+            document.getElementById("result").value 
+            = eval(document.getElementById("result").value);
+        }
+        function clearData() 
+        {
+            document.getElementById("result").value = null;
+            document.getElementById("result").focus();
+        }
+	</script>
+
+</head>
+<body>
+<table border="1" cellpadding="2" id="a">
+<tr>
+	<td colspan="3">
+		<input type="text" id="result" class="jgk">
+	</td>
+	<td>
+	<input type="button" value="C" id="C" onclick="clearData()">
+	</td>
+</tr>
+<tr>
+	<td>
+	<input type="button" value="1" id="1" onclick="showData(this.id)">
+	</td>
+	<td>
+	<input type="button" value="2" id="2" onclick="showData(this.id)">
+	</td>
+	<td>
+	<input type="button" value="3" id="3" onclick="showData(this.id)">
+	</td>
+	<td>
+		<input type="button" value="+" id="+" onclick="showData(this.id)">
+	</td>
+</tr>
+<tr>
+	<td>
+	<input type="button" value="4" id="4" onclick="showData(this.id)">
+	</td>
+	<td>
+	<input type="button" value="5" id="5" onclick="showData(this.id)">
+	</td>
+	<td>
+	<input type="button" value="6" id="6" onclick="showData(this.id)">
+	</td>
+	<td>
+	<input type="button" value="-" id="-" onclick="showData(this.id)">
+	</td>
+</tr>
+<tr>
+	<td>
+	<input type="button" value="7" id="7" onclick="showData(this.id)">
+	</td>
+	<td>
+	<input type="button" value="8" id="8" onclick="showData(this.id)">
+	</td>
+	<td>
+	<input type="button" value="9" id="9" onclick="showData(this.id)">
+	</td>
+	<td>
+	<input type="button" value="*" id="*" onclick="showData(this.id)">
+	</td>
+</tr>
+<tr>
+	<td>
+	<input type="button" value="0"	id="0" onclick="showData(this.id)">
+	</td>
+	<td>
+	<input type="button" value="." id="." onclick="showData(this.id)">
+	</td>
+	<td>
+	<input type="button" value="=" id="=" onclick="calculate(this.id)">
+	</td>
+	<td>
+	<input type="button" value="/" id="/" onclick="showData(this.id)">
+	</td>
+</tr>
+</body>
+</html>
