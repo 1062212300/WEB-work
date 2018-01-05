@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>海贼王</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+	*{
+		margin: 0px;
+		padding:0px;
+	}
+	a{
+		text-decoration: none;
+		color: #4D3900;
+	}
+	#headback{
+		background: url(onepiece.jpg);
+		margin: 0px;
+		height: 455px;
+	}
+	#back{
+		height: 450px;
+		width: 736px;
+		margin-top:5px; 
+		margin-left: 400px;
+	}
+	#dhl{
+		background-color: #00ccff;
+		height: 113px;
+		list-style:none;
+	}
+	#dhlul li{
+		float: left;
+		list-style: none;
+		font-weight: bold;
+		background-color: #666666;
+		text-align:center;
+		width: 100px;
+	}
+	#dhlul a:link,#dhlul a:visited{
+		display:block;
+		width:100px;
+		color: #666;
+		text-align:center;
+		text-decoration:none;
+		background:#CCC;
+	}
+	#dhlul a:hover{
+		color: #FFF;
+		font-size: 22px;
+		text-decoration: underline;
+		font-weight: bold;
+		background:#999;
+	}
+	#dhlul ul{
+		list-style: none;
+	}
+	#dhlul li ul li a:hover{
+		background:#C00;
+	}
+	#dhlul li ul{
+		display:none;
+	}
+	#dhlul li.subMenuShow ul{
+		display:block;
+	}
+	#dhlone{
+		font-size: 24px;
+		margin-left:70px; 
+		margin-top: 20px;
+	}
+	.ssl{
+		margin-left: 1150px;
+	}
+	#ssk{
+		height: 20px;
+	}
+	#ss{
+		height: 25px;
+		text-decoration:none;
+		margin-top: 7px;
+	}
+	#ssl{
+	 	background-color: #00ccff;
+	 	padding-top: 25px;
+	}
+	.dhlul a{
+		color:white;
+		font-weight: bold;
+		display: block;
+		padding:10px; 
+	}
+	.dhlul a:hover{
+		background-color: #cc9999;
+	}
+	#footer{
+		margin-top: 930px;
+	}
+	.zp{
+		height: 200px;
+	}
+	.a img{
+		height: 165px;
+		width: 250px;
+		margin: 25px;
+		margin-top: 35px;
+		margin-bottom:0px; 
+		margin-left:30px;
+		float: left;
+	}
+	.b img{
+		height: 165px;
+		width: 250px;
+		margin: 25px;
+		margin-top: 35px;
+		margin-bottom:0px; 
+		float: left;
+	}
+	.c img{
+		height: 165px;
+		width: 250px;
+		margin: 25px;
+		margin-top: 35px;
+		margin-bottom:0px; 
+		float: left;
+	}
+	.d img{
+		height: 165px;
+		width: 250px;
+		margin: 25px;
+		margin-top: 35px;
+		margin-bottom:0px; 
+		float: left;
+	}
+	.e img{
+		height: 165px;
+		width: 250px;
+		margin: 30px;
+		margin-top: 35px;
+		margin-bottom:0px; 
+		float: left;
+	}
+	#zpwz{
+		height: 32px;
+	}
+	#a{
+		margin-left:60px; 
+		float: left;
+	}
+	#b{
+		margin-left:135px; 
+		float: left;
+	}
+	#c{
+		margin-left:115px; 
+		float: left;
+	}
+	#d{
+		margin-left:145px; 
+		float: left;
+	}
+	#e{
+		margin-left:180px; 
+		float: left;
+	}
+	#foot{
+		margin-top: 30px;
+		height: 80px;
+		background-color: #c0c0c0;
+	}
+	.gs{
+		margin-left: 450px;
+		padding-top: 10px;
+	}
+	.zz{
+		margin-left: 710px;
+		width: 200px;
+		margin-top: 10px;
+	}
+	.mone{
+		float: left;
+		height: 80px;
+		width: 71px;
+		margin-left:150px; 
+	}
+	.mtwo{
+		float: right;
+		height: 80px;
+		width: 71px;
+		margin-right: 150px;
+	}
+	#content{
+		margin-top: 30px;
+	}
+	#left{
+		height: 900px;
+		width: 420px;
+		margin-top: 20px;
+		float: left;
+	}
+	#left img{
+		height: 446px;
+		width: 314px;
+		padding-left: 53px;
+	}
+	#left p{
+		font-weight: bold;
+		font-size: 45px;
+		padding-top: 15px;
+		padding-left: 55px;
+	}
+	.left a{
+		font-size: 25px;
+	}
+	.left li{
+		list-style-type: none;
+		font-size: 35px;
+		padding-top: 5px;
+		padding-left:55px; 
+	}
+	#lf{
+		float: left;
+	}
+	#right{
+		height: 900px;
+		width: 420px;
+		margin-top: 20px;
+		float: left;
+	}
+	#right img{
+		height: 446px;
+		width: 314px;
+		padding-left: 53px;
+	}
+	#right p{
+		font-weight: bold;
+		font-size: 45px;
+		padding-top: 15px;
+		padding-left: 55px;
+	}
+	.right a{
+		font-size: 25px;
+	}
+	.right li{
+		list-style-type: none;
+		font-size: 35px;
+		padding-top: 5px;
+		padding-left:25px; 
+	}
+	</style>
+	<style type="text/css">
+		#divTip{
+		  background-color:yellow;
+		  display:none;
+		  padding:5px;
+		}
+		#toolTip{
+		  font-weight:bold;
+		}
+	</style>
+	<style type="text/css">
+		#divTip1{
+		  background-color:yellow;
+		  display:none;
+		  padding:5px;
+		}
+		#toolTip1{
+		  font-weight:bold;
+		}
+	</style>
+	<style type="text/css">
+  	#picScroll{
+  		white-space: nowrap;
+  		overflow:hidden;
+  		width:679px;
+  		float: left;
+  	}
+	</style>
+	<script type="text/javascript">
+		function changeToLeft(){
+		document.getElementById("picScroll").scrollLeft++;
+		if(document.getElementById("picScroll").scrollLeft>document.getElementById("picScroll1").offsetWidth)
+		{
+			document.getElementById("picScroll").scrollLeft=0;
+		}
+		}	
+	window.onload = function(){
+		var liNodes = document.getElementsByTagName("li");
+		for (var i=0; i<liNodes.length; i++)
+		{
+			liNodes[i].onmouseover = function(){
+				this.className = "subMenuShow";
+			}
+			liNodes[i].onmouseout = function(){
+				this.className = "";
+			}
+		}
+		var pic=document.getElementById("pic");
+		var divTip=document.getElementById("divTip");
+		pic.onmousemove=function(e){
+			divTip.style.display="block";
+			divTip.style.left=e.clientX+5+"px";
+			divTip.style.top=e.clientY+5+"px";
+		}
+		pic.onmouseout=function(){
+			divTip.style.display="none";
+		}
+
+		var pic=document.getElementById("pic1");
+		var divTip1=document.getElementById("divTip1");
+		pic.onmousemove=function(e){
+			divTip1.style.display="block";
+			divTip1.style.left=e.clientX+5+"px";
+			divTip1.style.top=e.clientY+5+"px";
+		}
+		pic.onmouseout=function(){
+			divTip1.style.display="none";
+		}
+		var run = setInterval("changeToLeft()",10);
+		function con(){
+			run=setInterval("changeToLeft()",10);
+		}
+	}
+	</script>
+</head>
+<body>
+<!--页头部分-->
+<div id="header">
+	<div id="headback">
+		<img src="toubu.jpg" id="back">
+	</div>
+	<div id="dhl">
+		<ul id="dhlul">
+			<li id="dhlone"><a href="#">草帽船员</a>
+				<ul >
+					<li><a href="#">路飞</a></li>
+					<li><a href="#">索隆</a></li>
+					</ul>
+			</li>
+			<li id="dhlone"><a href="#">人物介绍</a>
+				<ul >
+					<li><a href="#">生日</a></li>
+					<li><a href="#">能力</a></li>
+				</ul>
+			</li>
+			<li id="dhlone"><a href="#">势力分布</a>
+				<ul>
+					<li><a href="#">海军</a></li>
+					<li><a href="#">四皇</a></li>
+				</ul>
+			</li>
+			<li id="dhlone"><a href="#">四大海域</a>
+				<ul >
+					<li><a href="#">东海</a></li>
+					<li><a href="#">南海</a></li>
+				</ul>
+			</li>
+			<li id="dhlone"><a href="#">古代兵器</a>
+				<ul >
+					<li><a href="#">冥王</a></li>
+					<li><a href="#">海王</a></li>
+				</ul>
+			</li>
+			<li id="dhlone"><a href="#">了解我们</a>
+				<ul >
+					<li><a href="#">加入我们</a></li>
+					<li><a href="#">打赏!</a></li>
+				</ul>
+			</li>
+		</ul>
+		<ul class="ssl">
+			<li id="ssl">
+			<input type="text" name="搜索" placeholder="请输入" id="ssk">
+			<input type="submit" name="搜索" value="搜索" id="ss">
+			</li>
+		</ul>
+	</div>
+</div>
+<!--页面内容-->
+<div id="content">
+	<div id="left">
+		<img src="aisi.jpg" id="pic">
+		<div id="divTip">
+			<div id="toolTip">Custom Tooltip</div>
+			更多详细信息...
+		</div>
+		<p>伟大航路前半段</p>
+		<ul class="left">
+			<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;跨越红土大陆</a></li>
+			<li><a href="#">"阿拉巴斯坦"事件</a></li>
+			<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;"空岛"大冒险</a></li>
+			<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;"司法岛"事件</a></li>
+			<li><a href="#">&nbsp;&nbsp;香波地群岛分离</a></li>
+			<li><a href="#">&nbsp;&nbsp;大闹"海底监狱"</a></li>
+			<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"顶上战争!"</a></li>
+		</ul>
+	</div>
+	<div id="picScroll" onmouseover="clearInterval(run)" onmouseout="con()">
+		<span id="picScroll1">
+			<img src="lf.jpg" />
+			<img src="2lf.jpg" />
+			<img src="3lf.jpg" />
+		</span>
+		<span id="picScroll2" >
+			<img src="lf.jpg" />
+			<img src="2lf.jpg" />
+			<img src="3lf.jpg" />
+		</span> 
+	</div>
+	<div id="right">
+		<img src="sabo.jpg" id="pic1">
+		<div id="divTip1">
+			<div id="toolTip1">Custom Tooltip</div>
+			更多详细信息...
+		</div>
+		<p>伟大航路后半段</p>
+		<ul class="right">
+			<li><a href="#">聚首!败北之岛-香波地群岛!</a></li>
+			<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;前往新世界!</a></li>
+			<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"鱼人岛"大冒险!</a></li>
+			<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;"Punk Hazard"大冒险</a></li>
+			<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"德克萨斯"大事件</a></li>
+			<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;抵达"象岛"</a></li>
+			<li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;前往"蛋糕岛"-山治篇</a></li>
+		</ul>
+	</div>
+</div>
+<!--页脚部分-->
+<div id="footer"> 
+	<div class="zp">
+		<div class="a">
+			<img src="011.jpg">
+		</div>
+		<div class="b">
+			<img src="012.jpg">
+		</div>
+		<div class="c">
+			<img src="013.jpg">
+		</div>
+		<div class="d">
+			<img src="014.jpg">
+		</div>
+		<div class="e">
+			<img src="015.jpg">
+		</div>
+	</div>
+	<div id="zpwz">
+		<h2 id="a"><a href="#">"艾斯"和"路飞"</a></h2>
+		<h2 id="b"><a href="#">"不死鸟"马尔科</a></h2>
+		<h2 id="c"><a href="#">"马尔科"和"艾斯"</a></h2>
+		<h2 id="d"><a href="#">"火拳"艾斯</a></h2>
+		<h2 id="e"><a href="#">"艾斯"之死</a></h2>
+	</div>
+	<div id="foot">
+		<img src="ewm.png" class="mone">
+		<img src="ewm.png" class="mtwo">
+		<p class="gs">海贼王对于许多人可能只是一部动漫,但我知道,那对于海米而言是我们一起逝去过的青春!</p>
+		<p class="zz">[<a href="#">加入我们</a>]</p>
+	</div>
+</div>
+</body>
+</html>
